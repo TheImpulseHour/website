@@ -38,6 +38,10 @@ header {
     max-width: 849px;
 }
 
+#twitch-embed>iframe{
+    min-height: 480px;
+}
+
 #social{
     padding-left: 10%;
     padding-right: 10%;
@@ -113,9 +117,10 @@ body {
 <script src="https://embed.twitch.tv/embed/v1.js"></script>
     
 <script type="text/javascript">
+    
     var embed = new Twitch.Embed("twitch-embed", {
-      width: 854,
-      height: 480,
+      width: "100%",
+      height: "200%",
       channel: "theimpulsehour",
       layout: "video",
       autoplay: true,
